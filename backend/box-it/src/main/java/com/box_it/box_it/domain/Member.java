@@ -20,12 +20,15 @@ public class Member {
     @Column(unique = true, nullable = false)
     private String name;
 
+    @Column(nullable = false)
     private String password;
+
+    private boolean enabled = true;
 
     private String nickname;
 
     private String profileImageUrl;
-
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
     private String intro;
 
     private LocalDateTime joinDate;
